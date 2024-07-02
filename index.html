@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayumit.com</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home animate-on-scroll" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ayush Mittal</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I am an entrepreneurial enthusiast and a dedicated web developer and python programmer with a passion for creating innovative digital solutions. As a data analyst and database management developer, I excel in transforming complex data into actionable insights. Currently pursuing a B.Tech Honours degree with a specialization in AI and Analytics.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ayush-mittal-b25361289/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://github.com/Ayush-AI-ux" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.youtube.com/@ayushthinks1414" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <a href=file:///C:/Users/ayush/OneDrive/Desktop/Assignments%20pdf/Resume%20cv/Resume.pdf class="btn" download target="_blank">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="image1.jpg" alt="Developer Picture">
+        </div>
+    </section>
+    <section class="about animate-on-scroll" id="about">
+        <div class="about-img">
+            <img src="image1.jpg" alt="About Developer Picture">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2><br>
+            <h3>Developer & Enterpreneur</h3>
+            <p>Currently pursuing B.Tech Honours specialization in AI and Analytics. I have a lot of interest in startup world and Enterpreneurship.I love to explore new technologies in real world and understanding the implementation in making different types of real time works possible. I also love to explore different types of people mindset and was always in search of people alligned with same mindset as of me.</p>
+            <a href="Aboutreadmore.html" class="btn" target="_blank">Read More</a>
+        </div>
+    </section>
+    <section class="services animate-on-scroll" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxs-bot'></i>
+                <h3>Machine Learning</h3>
+                <p>Machine learning enables smart systems that learn and adapt from data, enhancing efficiency and accuracy in tasks like personalized recommendations and fraud detection. It powers automated operations and delivers tailored user experiences across diverse industries.</p>
+                <a href="mlread.html" class="btn" target="_blank">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Data Analytics</h3>
+                <p>Data analytics involves extracting insights from raw data to drive informed decisions. It helps identify trends, optimize processes, and uncover hidden patterns, leading to improved strategies and outcomes in various sectors.</p>
+                <a href="da.html" class="btn" target="_blank">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>Web development encompasses creating and maintaining websites, ensuring they are functional, visually appealing, and user-friendly. It involves coding, design, and content management to deliver seamless online experiences for users.</p>
+                <a href="wd.html" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio animate-on-scroll" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2> 
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="portfolio1.png" alt="First Project">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Our web design project for an e-commerce website focuses on creating an intuitive and visually appealing interface, ensuring a seamless shopping experience for users.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio2.jpg" alt="Second Project">
+                <div class="portfolio-layer">
+                    <h4>GPSS Toll based system</h4>
+                    <p>Our GPS toll-based system project streamlines toll collection by using GPS technology for automatic toll detection and payment.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio3.png" alt="Third Project">
+                <div class="portfolio-layer">
+                    <h4>GYM Management</h4>
+                    <p>Our gym management project simplifies the operations of fitness centers by automating member registration.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>  
+            </div>          
+        </div>
+    </section>
+    <section class="contact animate-on-scroll" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="https://formspree.io/f/xgvwekdy" method="POST">
+            <div class="input-box">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="mobile_number" placeholder="Mobile Number" required>
+                <input type="text" name="subject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Ayush | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bxs-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- custom js  -->
+    <script src="script.js"></script>
+</body>
+</html>

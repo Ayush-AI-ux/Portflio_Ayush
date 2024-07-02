@@ -1,0 +1,114 @@
+/* Services Section Styles */
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --transition-speed: 0.3s;
+}
+
+.services {
+    padding: 10rem 9%;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.services-text {
+    flex: 2;
+    max-width: 60%;
+}
+
+.services-text h2 {
+    font-size: 3.2rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 30px var(--main-color), 0 0 40px var(--main-color), 0 0 50px var(--main-color);
+    animation: glow 1.5s infinite alternate;
+}
+
+.services-text p, .services-text ul, .services-text li {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.services-text ul {
+    padding-left: 2rem;
+}
+
+.services-text ul li {
+    margin-bottom: 1rem;
+}
+
+.services-text a {
+    color: var(--main-color);
+    text-decoration: underline;
+    transition: color var(--transition-speed);
+}
+
+.services-text a:hover {
+    color: rgba(14, 255, 255, 0.5);
+}
+
+.services-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.services-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: transform var(--transition-speed);
+}
+
+.services-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px var(--main-color), 0 0 60px var(--main-color);
+}
+
+.footer {
+    background: var(--second-bg-color);
+    padding: 2rem 9%;
+    text-align: center;
+}
+
+.footer-text p {
+    color: var(--main-color);
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services-text {
+        max-width: 100%;
+    }
+
+    .services-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .services-images img {
+        width: 32%;
+    }
+}
