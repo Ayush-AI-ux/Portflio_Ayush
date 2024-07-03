@@ -53,6 +53,10 @@ To run this project locally, follow these steps:
 - **Projects Section:** Showcases some of my notable projects with descriptions and links.
 - **Contact Section:** Allows visitors to send me a message directly through the website.
 
+## Download CV
+
+[Download my CV](/assets/Resume.pdf)
+
 ## Contact
 
 Feel free to reach out if you have any questions or opportunities!
